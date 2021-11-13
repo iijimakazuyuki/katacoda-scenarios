@@ -34,6 +34,17 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "ArgoCD Dashboard",
+        "port": 443
+      },
+      {
+        "name": "Podinfo",
+        "port": 80
+      }
+    ],
     "hideintro": true,
     "uilayout": "terminal"
   },
