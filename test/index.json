@@ -46,7 +46,7 @@
       },
       {
         "name": "Podinfo",
-        "port": 80
+        "port": 9898
       }
     ],
     "hideintro": true,

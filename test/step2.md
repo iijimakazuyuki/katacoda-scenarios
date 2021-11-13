@@ -4,6 +4,8 @@
 
 `helm install argocd argo/argo-cd`{{execute}}
 
-`kubectl port-forward svc/argocd-server 443:443 --address 0.0.0.0 > /dev/null &`{{execute}}
+`kubectl get po -l app.kubernetes.io/name=argocd-server`{{execute}}
+
+`kubectl port-forward svc/argocd-server 443:443 --address 0.0.0.0 &> /dev/null &`{{execute}}
 
 `kubectl -n default get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo`{{execute}}
