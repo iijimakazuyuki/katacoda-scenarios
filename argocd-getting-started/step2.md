@@ -26,6 +26,11 @@ Forward the environment's port to access Argo CD's Web UI by executing following
 `kubectl port-forward svc/argocd-server 443:443 --address 0.0.0.0 &> /dev/null &`{{execute}}
 
 Open `ArgoCD Dashboard` tab and log in as `admin`.
+
+![Argo CD Login Page](argocd_login.png)
+
 You can see no applications in the dashboard.
+
+![Argo CD Applications](argocd_applications.png)
 
 Next, create your own Git repository to push your own deployment configuration.
