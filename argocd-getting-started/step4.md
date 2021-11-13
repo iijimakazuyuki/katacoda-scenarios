@@ -16,10 +16,10 @@ Then apply the file to Kubernetes by executing following command:
 
 `kubectl apply -f manifest-application.yaml`{{execute}}
 
-You can see `manifest` in the Argo CD dashboard and `podinfo` will show up too.
+You can see `manifest` and `podinfo` applications in the Argo CD dashboard.
 Podinfo is an open source Web application. cf. `https://github.com/stefanprodan/podinfo`
 
-Wait until `podinfo` is `Sync` and `Healthy` in the dashboard, which means podinfo is deployed successfully.
+Wait until `podinfo` is `Synced` and `Healthy` in the dashboard, which means podinfo is deployed successfully.
 
 Forward the environment's port to access podinfo's Web UI by executing following command:
 

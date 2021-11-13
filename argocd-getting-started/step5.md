@@ -6,10 +6,11 @@ The Helm chart's configuration is written in `spec.source.helm.values`.
 
 Edit `ui.color` and `ui.message` and push to Git.
 Argo CD will detect the changes and syncing to Kubernetes.
+You can click `Refresh` to detect changes manually.
 
+Wait until syncing is completed.
 Syncing status is seen in the Argo CD dashboard.
 
-When syncing is completed,
 Forward the environment's port to access podinfo's Web UI by executing following command:
 
 `kubectl port-forward svc/podinfo 9898:9898 --address 0.0.0.0 &> /dev/null`{{execute}}
