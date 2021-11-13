@@ -4,6 +4,14 @@
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
+    "assets": {
+      "controlplane": [
+        {
+          "file": "*",
+          "target": "~/"
+        }
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",
