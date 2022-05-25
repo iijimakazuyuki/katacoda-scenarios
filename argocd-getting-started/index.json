@@ -57,6 +57,6 @@
     "uilayout": "vscode-terminal-split"
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "kubernetes-cluster-running:1.21"
   }
 }
